@@ -63,6 +63,7 @@
 * Intellij Community
 * Spring Boot Kafka
 * Maven
+* Java 11
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -74,6 +75,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 - Clone the repo
  ```sh
+cd <root-projects-directory>
 git clone https://github.com/gnlabrie/kafka-time-demo.git
 ```
 
@@ -83,18 +85,27 @@ git clone https://github.com/gnlabrie/kafka-time-demo.git
 cd <clone-path>/consumer
 mvn package -Dmaven.test.skip
 ```
+This process will create a SNAPSHOT version of Kafka Time Demo Consumer in *target* directory.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Running Kafka Time Demo Consumer (standalone)
+The Kafka Time Demo Consumer demonstrate a Spring Boot Kafka application reading messages from a designated topic.
+
+### Running Kafka Time Demo Consumer (from my last build)
 ```shell
 cd <clone-path>/consumer/bin
 java -jar consumer-0.0.1.jar
 ```
 
-### Update configuration
-You could update the configuration of Kafka Time Demo Consumer by modifying the *application.yml* file
+Note : application.properties is located in <clone-path>/producer/bin/application.properties
+
+### Running Kafka Time Demo Consumer (from last Maven build)
+```shell
+cd <clone-path>/consumer
+java -jar target/consumer-0.0.1-SNAPSHOT.jar
+```
+Note : application.properties is located in <clone-path>/consumer/target/classes/application.properties
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 

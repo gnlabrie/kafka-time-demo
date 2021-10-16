@@ -97,7 +97,7 @@ Note : application.properties is located in <clone-path>/producer/bin/applicatio
 ### Running Kafka Time Demo Producer (from last Maven build)
 ```shell
 cd <clone-path>/producer
-java -jar target/producer-0.0.1.jar
+java -jar target/producer-0.0.1-SNAPSHOT.jar
 ```
 Note : application.properties is located in <clone-path>/producer/target/classes/application.properties
 
