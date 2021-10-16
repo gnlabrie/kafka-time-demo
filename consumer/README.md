@@ -89,8 +89,8 @@ mvn package -Dmaven.test.skip
 
 ### Running Kafka Time Demo Consumer (standalone)
 ```shell
-cd <clone-path>/consumer
-java -jar target/consumer-0.0.1-SNAPSHOT.jar
+cd <clone-path>/consumer/bin
+java -jar consumer-0.0.1.jar
 ```
 
 ### Update configuration

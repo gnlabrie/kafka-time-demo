@@ -87,11 +87,19 @@ mvn package -Dmaven.test.skip
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Running Kafka Time Demo Producer (standalone)
+### Running Kafka Time Demo Producer (from my last build)
+```shell
+cd <clone-path>/producer/bin
+java -jar producer-0.0.1.jar
+```
+Note : application.properties is located in <clone-path>/producer/bin/application.properties
+
+### Running Kafka Time Demo Producer (from last Maven build)
 ```shell
 cd <clone-path>/producer
-java -jar target/producer-0.0.1-SNAPSHOT.jar
+java -jar target/producer-0.0.1.jar
 ```
+Note : application.properties is located in <clone-path>/producer/target/classes/application.properties
 
 ### Update configuration
 You could update the configuration of Kafka Time Demo producer by modifying the *application.yml* file
