@@ -7,12 +7,14 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
+<!--
 <br />
 <p align="center">
   <a href="https://github.com/gnlabrie/kafka-time-demo">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 </p>
+-->
 
 <h3 align="center">Kafka Time Demo Producer</h3>
 
@@ -86,6 +88,8 @@ mvn package -Dmaven.test.skip
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+The Kafka Time Demo Producer demonstrate a Spring Boot Kafka application publishing messages to a designated topic as close to the second as possible.
 
 ### Running Kafka Time Demo Producer (from my last build)
 ```shell
